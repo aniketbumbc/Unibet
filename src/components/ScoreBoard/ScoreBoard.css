@@ -1,0 +1,18 @@
+.score-container {
+  width: 900px;
+  text-align: left;
+  margin: 16px auto;
+}
+
+article {
+  padding: 8px 16px 16px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+article h1 {
+  font-size: 22px;
+}
+article .preamble {
+  font-weight: bold;
+}

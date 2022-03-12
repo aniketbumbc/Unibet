@@ -1,3 +1,4 @@
+import ScoreBoard from '../ScoreBoard/ScoreBoard';
 import './Header.css';
 
 const Header = () => {
@@ -6,6 +7,7 @@ const Header = () => {
       <header data-testid='header'>
         <div className='header-logo'>Unibet</div>
       </header>
+      <ScoreBoard />
     </>
   );
 };
