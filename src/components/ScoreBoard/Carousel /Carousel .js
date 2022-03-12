@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { PrevButton, NextButton } from './CarousleBtn/CarousleBtn';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { getImage } from '../../../Utils/utils';
+import { getImage, getGameTime } from '../../../Utils/utils';
 import demoData from '../../../demo.json';
 import './Carousel .css';
 
@@ -66,6 +66,10 @@ const Carousel = () => {
                       />
                       {data.event.homeName} {data.event.awayName}
                     </p>
+                    <p className='sport-time'>
+                      {getGameTime(data.event.start)}
+                    </p>
+                    <button className='bet-btn'>Place a bet</button>
                   </div>
                 </div>
               );

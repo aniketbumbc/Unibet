@@ -1,6 +1,6 @@
 .embla {
   position: relative;
-  background-color: #f7f7f7;
+
   padding: 20px;
   max-width: 670px;
   margin-left: auto;
@@ -81,7 +81,7 @@
 .embla__slide__center {
   position: relative;
   overflow: hidden;
-  height: 190px;
+  height: 220px;
   background-color: black;
   text-align: center;
   color: #f7f7f7;
@@ -99,4 +99,21 @@
 
 .sport-img {
   margin-right: 10px;
+}
+
+.sport-time {
+  color: gray;
+}
+
+.bet-btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

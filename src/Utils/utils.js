@@ -15,3 +15,12 @@ export const getImage = (imageType) => {
       return defaultLogo;
   }
 };
+
+export const getGameTime = (sportDate) => {
+  let gameSchedule;
+  const todayDate = new Date().toISOString().split('T')[0];
+  const gameTime = new Date(sportDate).toLocaleTimeString();
+  const gameDate = new Date(sportDate).toISOString().slice(0, 10);
+  todayDate === gameDate ? (gameSchedule = 'Today') : (gameSchedule = gameDate);
+  return `${gameSchedule}, ${gameTime}`;
+};
