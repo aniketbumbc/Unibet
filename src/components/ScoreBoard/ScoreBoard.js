@@ -1,3 +1,4 @@
+import Carousel from './Carousel /Carousel ';
 import Instruction from './Instruction/Instruction';
 import './ScoreBoard.css';
 
@@ -10,6 +11,7 @@ const ScoreBoard = () => {
           <p className='preamble'>
             Here is a list of matches that are live right now.
           </p>
+          <Carousel />
           <Instruction />
         </article>
       </div>

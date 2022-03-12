@@ -1,0 +1,378 @@
+[
+  {
+    "event": {
+      "name": "Top Speed Group (W) - JSL Group (W)",
+      "homeName": "Top Speed Group (W)",
+      "awayName": "JSL Group (W)",
+      "start": "2022-03-12T10:39Z",
+      "group": "TVL (W)",
+      "type": "ET_MATCH",
+      "sport": "TENNIS",
+      "state": "STARTED",
+      "liveBetOffers": true,
+      "openForLiveBetting": true,
+      "id": 1018495249,
+      "groupId": 2000112754,
+      "path": [
+        {
+          "id": 1000093214,
+          "name": "Volleyball",
+          "englishName": "Volleyball"
+        },
+        {
+          "id": 2000112752,
+          "name": "Chinese Taipei",
+          "englishName": "Chinese Taipei"
+        },
+        {
+          "id": 2000112754,
+          "name": "TVL (W)",
+          "englishName": "TVL (W)"
+        }
+      ]
+    },
+    "liveData": {
+      "eventId": 1018495249,
+      "open": true,
+      "matchClock": {
+        "minute": 19,
+        "second": 28,
+        "running": true
+      },
+      "score": {
+        "home": "18",
+        "away": "19",
+        "who": "AWAY"
+      },
+      "statistics": {
+        "sets": {
+          "home": [-1, -1, -1, -1, -1],
+          "away": [-1, -1, -1, -1, -1],
+          "homeServe": false
+        }
+      }
+    },
+    "mainBetOffer": {
+      "id": 2318892713,
+      "eventId": 1018495249,
+      "main": true,
+      "live": true,
+      "startingPrice": false,
+      "criterion": {
+        "id": 1001160042,
+        "label": "Match Odds"
+      },
+      "betOfferType": {
+        "id": 2,
+        "name": "Match",
+        "englishName": "Match"
+      },
+      "outcomes": [
+        {
+          "id": 3075880896,
+          "odds": 1050,
+          "label": "Top Speed Group (W)",
+          "type": "OT_ONE",
+          "changedDate": "2022-03-12T10:59:47Z",
+          "participant": "Top Speed Group (W)",
+          "oddsFractional": "1/20",
+          "oddsAmerican": "-2000"
+        },
+        {
+          "id": 3075880899,
+          "odds": 9500,
+          "label": "JSL Group (W)",
+          "type": "OT_TWO",
+          "changedDate": "2022-03-12T10:59:47Z",
+          "participant": "JSL Group (W)",
+          "oddsFractional": "17/2",
+          "oddsAmerican": "850"
+        }
+      ],
+      "prematch": false,
+      "cashOutStatus": "ENABLED"
+    }
+  },
+  {
+    "event": {
+      "name": "Aalborg HIK - Bedsted KFUM",
+      "homeName": "Aalborg HIK",
+      "awayName": "Bedsted KFUM",
+      "start": "2022-03-12T11:00Z",
+      "group": "1. Division",
+      "type": "ET_MATCH",
+      "sport": "VOLLEYBALL",
+      "state": "NOT_STARTED",
+      "liveBetOffers": true,
+      "openForLiveBetting": true,
+      "id": 1018495218,
+      "groupId": 2000089911,
+      "path": [
+        {
+          "id": 1000093214,
+          "name": "Volleyball",
+          "englishName": "Volleyball"
+        },
+        {
+          "id": 2000055947,
+          "name": "Denmark",
+          "englishName": "Denmark"
+        },
+        {
+          "id": 2000089911,
+          "name": "1. Division",
+          "englishName": "1. Division"
+        }
+      ]
+    },
+    "liveData": {
+      "eventId": 1018495218,
+      "open": true,
+      "matchClock": {
+        "minute": 0,
+        "second": 0,
+        "running": false
+      },
+      "score": {
+        "home": "0",
+        "away": "0",
+        "who": "UNKNOWN"
+      },
+      "statistics": {
+        "sets": {
+          "home": [-1, -1, -1, -1, -1],
+          "away": [-1, -1, -1, -1, -1],
+          "homeServe": true
+        }
+      }
+    },
+    "mainBetOffer": {
+      "id": 2318896412,
+      "eventId": 1018495218,
+      "main": true,
+      "live": true,
+      "startingPrice": false,
+      "criterion": {
+        "id": 1001160042,
+        "label": "Match Odds"
+      },
+      "betOfferType": {
+        "id": 2,
+        "name": "Match",
+        "englishName": "Match"
+      },
+      "outcomes": [
+        {
+          "id": 3075908421,
+          "odds": 1110,
+          "label": "Aalborg HIK",
+          "type": "OT_ONE",
+          "changedDate": "2022-03-12T10:55:52Z",
+          "participant": "Aalborg HIK",
+          "oddsFractional": "1/10",
+          "oddsAmerican": "-910"
+        },
+        {
+          "id": 3075908423,
+          "odds": 6000,
+          "label": "Bedsted KFUM",
+          "type": "OT_TWO",
+          "changedDate": "2022-03-12T10:55:52Z",
+          "participant": "Bedsted KFUM",
+          "oddsFractional": "5/1",
+          "oddsAmerican": "500"
+        }
+      ],
+      "prematch": false,
+      "cashOutStatus": "ENABLED"
+    }
+  },
+  {
+    "event": {
+      "name": "Top Speed Group (W) - JSL Group (W)",
+      "homeName": "Top Speed Group (W)",
+      "awayName": "JSL Group (W)",
+      "start": "2022-03-12T10:39Z",
+      "group": "TVL (W)",
+      "type": "ET_MATCH",
+      "sport": "BASKETBALL",
+      "state": "STARTED",
+      "liveBetOffers": true,
+      "openForLiveBetting": true,
+      "id": 1018495243,
+      "groupId": 2000112754,
+      "path": [
+        {
+          "id": 1000093214,
+          "name": "Volleyball",
+          "englishName": "Volleyball"
+        },
+        {
+          "id": 2000112752,
+          "name": "Chinese Taipei",
+          "englishName": "Chinese Taipei"
+        },
+        {
+          "id": 2000112754,
+          "name": "TVL (W)",
+          "englishName": "TVL (W)"
+        }
+      ]
+    },
+    "liveData": {
+      "eventId": 1018495249,
+      "open": true,
+      "matchClock": {
+        "minute": 19,
+        "second": 28,
+        "running": true
+      },
+      "score": {
+        "home": "18",
+        "away": "19",
+        "who": "AWAY"
+      },
+      "statistics": {
+        "sets": {
+          "home": [-1, -1, -1, -1, -1],
+          "away": [-1, -1, -1, -1, -1],
+          "homeServe": false
+        }
+      }
+    },
+    "mainBetOffer": {
+      "id": 2318892713,
+      "eventId": 1018495249,
+      "main": true,
+      "live": true,
+      "startingPrice": false,
+      "criterion": {
+        "id": 1001160042,
+        "label": "Match Odds"
+      },
+      "betOfferType": {
+        "id": 2,
+        "name": "Match",
+        "englishName": "Match"
+      },
+      "outcomes": [
+        {
+          "id": 3075880896,
+          "odds": 1050,
+          "label": "Top Speed Group (W)",
+          "type": "OT_ONE",
+          "changedDate": "2022-03-12T10:59:47Z",
+          "participant": "Top Speed Group (W)",
+          "oddsFractional": "1/20",
+          "oddsAmerican": "-2000"
+        },
+        {
+          "id": 3075880899,
+          "odds": 9500,
+          "label": "JSL Group (W)",
+          "type": "OT_TWO",
+          "changedDate": "2022-03-12T10:59:47Z",
+          "participant": "JSL Group (W)",
+          "oddsFractional": "17/2",
+          "oddsAmerican": "850"
+        }
+      ],
+      "prematch": false,
+      "cashOutStatus": "ENABLED"
+    }
+  },
+  {
+    "event": {
+      "name": "Top Speed Group (W) - JSL Group (W)",
+      "homeName": "Top Speed Group (W)",
+      "awayName": "JSL Group (W)",
+      "start": "2022-03-12T10:39Z",
+      "group": "TVL (W)",
+      "type": "ET_MATCH",
+      "sport": "FOOTBALL",
+      "state": "STARTED",
+      "liveBetOffers": true,
+      "openForLiveBetting": true,
+      "id": 1018495229,
+      "groupId": 2000112754,
+      "path": [
+        {
+          "id": 1000093214,
+          "name": "Volleyball",
+          "englishName": "Volleyball"
+        },
+        {
+          "id": 2000112752,
+          "name": "Chinese Taipei",
+          "englishName": "Chinese Taipei"
+        },
+        {
+          "id": 2000112754,
+          "name": "TVL (W)",
+          "englishName": "TVL (W)"
+        }
+      ]
+    },
+    "liveData": {
+      "eventId": 1018495249,
+      "open": true,
+      "matchClock": {
+        "minute": 19,
+        "second": 28,
+        "running": true
+      },
+      "score": {
+        "home": "18",
+        "away": "19",
+        "who": "AWAY"
+      },
+      "statistics": {
+        "sets": {
+          "home": [-1, -1, -1, -1, -1],
+          "away": [-1, -1, -1, -1, -1],
+          "homeServe": false
+        }
+      }
+    },
+    "mainBetOffer": {
+      "id": 2318892713,
+      "eventId": 1018495249,
+      "main": true,
+      "live": true,
+      "startingPrice": false,
+      "criterion": {
+        "id": 1001160042,
+        "label": "Match Odds"
+      },
+      "betOfferType": {
+        "id": 2,
+        "name": "Match",
+        "englishName": "Match"
+      },
+      "outcomes": [
+        {
+          "id": 3075880896,
+          "odds": 1050,
+          "label": "Top Speed Group (W)",
+          "type": "OT_ONE",
+          "changedDate": "2022-03-12T10:59:47Z",
+          "participant": "Top Speed Group (W)",
+          "oddsFractional": "1/20",
+          "oddsAmerican": "-2000"
+        },
+        {
+          "id": 3075880899,
+          "odds": 9500,
+          "label": "JSL Group (W)",
+          "type": "OT_TWO",
+          "changedDate": "2022-03-12T10:59:47Z",
+          "participant": "JSL Group (W)",
+          "oddsFractional": "17/2",
+          "oddsAmerican": "850"
+        }
+      ],
+      "prematch": false,
+      "cashOutStatus": "ENABLED"
+    }
+  }
+]

@@ -3,6 +3,7 @@ header {
   text-align: left;
   margin: 0 auto;
   padding: 20px 0;
+  border-bottom: 1px solid #333;
 }
 
 .header-logo {
