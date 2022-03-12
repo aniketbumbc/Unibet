@@ -1,0 +1,14 @@
+footer {
+  background: #333;
+  color: #999;
+}
+
+footer .footer-container {
+  width: 900px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+footer .footer-container p {
+  padding: 16px 8px;
+}

@@ -1,0 +1,13 @@
+header {
+  width: 900px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.header-logo {
+  height: 33px;
+  background: url(../../assets/images/unibet-logo.png) no-repeat;
+  background-size: 200px 33px;
+  text-indent: -999em;
+}
