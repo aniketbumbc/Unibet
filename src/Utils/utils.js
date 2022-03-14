@@ -1,3 +1,4 @@
+import { UNIBET_CLIENT } from '../constant/constant';
 const tennisBallLogo = require('../assets/images/icons/tennis.png');
 const basketBallLogo = require('../assets/images/icons/basketball.png');
 const footBallLogo = require('../assets/images/icons/football.png');
@@ -23,4 +24,15 @@ export const getGameTime = (sportDate) => {
   const gameDate = new Date(sportDate).toISOString().slice(0, 10);
   todayDate === gameDate ? (gameSchedule = 'Today') : (gameSchedule = gameDate);
   return `${gameSchedule}, ${gameTime}`;
+};
+
+export const goToBettingClient = (eventId) => {
+  const redirectUrl = `${UNIBET_CLIENT}${eventId}`;
+  window.open(redirectUrl, '_blank');
+};
+
+export const getErrorMessage = (error) => {
+  if (error instanceof Error)
+    return error.message.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '');
+  return String(error);
 };

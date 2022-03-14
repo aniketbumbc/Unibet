@@ -18,11 +18,7 @@ describe('Instruction Component', () => {
 
   test('Should  have not have more than two para information', () => {
     render(<Instruction />);
-    const instructionParaOne = screen.getByTestId('instruction-1');
-    const instructionParaTwo = screen.getByTestId('instruction-2');
     const instructionParaThree = screen.queryByTestId('instruction-3');
-    expect(instructionParaOne).toBeInTheDocument();
-    expect(instructionParaTwo).toBeInTheDocument();
     expect(instructionParaThree).not.toBeInTheDocument();
   });
 });

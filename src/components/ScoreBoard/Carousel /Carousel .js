@@ -2,13 +2,12 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { PrevButton, NextButton } from './CarousleBtn/CarousleBtn';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { getImage, getGameTime } from '../../../Utils/utils';
-import demoData from '../../../demo.json';
+import { getImage, getGameTime, goToBettingClient } from '../../../Utils/utils';
 import './Carousel .css';
 
 const autoPlayOptions = { loop: true };
 
-const Carousel = () => {
+const Carousel = ({ eventsData }) => {
   const autoplay = useRef(
     Autoplay(
       { delay: 3000, stopOnInteraction: false },
@@ -48,28 +47,40 @@ const Carousel = () => {
 
   return (
     <>
-      <div className='embla'>
+      <div className='embla' data-testid='carousel-container'>
         <div className='embla__viewport' ref={emblaRef}>
           <div className='embla__container'>
-            {demoData.map((data, index) => {
+            {eventsData.map((event, index) => {
               return (
-                <div className='embla__slide' key={data.event.id}>
+                <div
+                  className='embla__slide'
+                  key={event.event.id}
+                  data-testid='slider'
+                >
                   <div className='embla__slide__center'>
                     <p className='score'>
-                      {data.liveData.score.home} - {data.liveData.score.away}
+                      {event.liveData.score?.home} -{' '}
+                      {event.liveData.score?.away}
                     </p>
                     <p className='teams'>
                       <img
                         className='sport-img'
-                        src={getImage(data.event.sport)}
-                        alt={data.event.sport}
+                        src={getImage(event.event.sport)}
+                        alt={event.event.sport}
                       />
-                      {data.event.homeName} {data.event.awayName}
+                      {event.event.homeName}{' '}
+                      <strong className='score'>vs</strong>{' '}
+                      {event.event.awayName}
                     </p>
                     <p className='sport-time'>
-                      {getGameTime(data.event.start)}
+                      {getGameTime(event.event.start)}
                     </p>
-                    <button className='bet-btn'>Place a bet</button>
+                    <button
+                      className='bet-btn'
+                      onClick={() => goToBettingClient(event.event.id)}
+                    >
+                      Place a bet
+                    </button>
                   </div>
                 </div>
               );

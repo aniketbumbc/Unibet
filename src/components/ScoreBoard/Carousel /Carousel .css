@@ -1,10 +1,9 @@
 .embla {
   position: relative;
-
-  padding: 20px;
-  max-width: 670px;
-  margin-left: auto;
+  padding: 10px;
+  max-width: 70%;
   margin-right: auto;
+  align-self: center;
 }
 
 .embla__viewport {
@@ -94,7 +93,7 @@
 
 .teams {
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .sport-img {

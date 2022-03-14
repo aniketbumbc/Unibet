@@ -1,7 +1,7 @@
 .score-container {
   width: 900px;
   text-align: left;
-  margin: 16px auto;
+  margin: 40px auto;
 }
 
 article {
@@ -15,4 +15,11 @@ article h1 {
 }
 article .preamble {
   font-weight: bold;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 }
