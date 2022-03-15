@@ -260,3 +260,7 @@ export const eventsTestData = [
     },
   },
 ];
+
+export const errorMessageUrl = new Error(
+  'JSONP server getting https://api.unicdn.net/v1/feeds/sportsbook/event/live.jsonp?app_id=1234&app_key=87643 failed'
+);
