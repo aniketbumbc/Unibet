@@ -1,4 +1,5 @@
-import { UNIBET_CLIENT } from '../constant/constant';
+import { UNIBET_CLIENT, CACHE_EXPIRTY } from '../constant/constant';
+import localForage from 'localforage';
 const tennisBallLogo = require('../assets/images/icons/tennis.png');
 const basketBallLogo = require('../assets/images/icons/basketball.png');
 const footBallLogo = require('../assets/images/icons/football.png');
@@ -35,4 +36,12 @@ export const getErrorMessage = (error) => {
   if (error instanceof Error)
     return error.message.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '');
   return String(error);
+};
+
+export const clearCache = () => {
+  setTimeout(() => {
+    localForage.clear().then(() => {
+      console.log('Clear cache data');
+    });
+  }, CACHE_EXPIRTY);
 };

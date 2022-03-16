@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { getErrorMessage } from '../Utils/utils';
-import { API_UNI_CDN } from '../constant/constant';
+import { getErrorMessage, clearCache } from '../Utils/utils';
+import { API_UNI_CDN, INITIAL_KEY } from '../constant/constant';
+import localForage from 'localforage';
 import fetch from 'fetch-jsonp';
 
 export const useFetch = () => {
@@ -23,6 +24,7 @@ export const useFetch = () => {
           setLoading(false);
           response.json().then((events) => {
             setEventsData(events.liveEvents);
+            localForage.setItem('Events', events.liveEvents);
           });
         } else {
           throw new Error('Something Went Wrong ' + response.status);
@@ -32,7 +34,17 @@ export const useFetch = () => {
         setError(getErrorMessage(error));
       }
     };
-    fetchData();
+
+    localForage.length().then((key) => {
+      if (key === INITIAL_KEY) {
+        fetchData();
+      } else {
+        localForage.getItem('Events').then((events) => {
+          setEventsData(events);
+        });
+      }
+    });
+    clearCache();
   }, [URL]);
 
   return { eventsData, loading, error };

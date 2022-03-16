@@ -39,9 +39,14 @@ describe('Utils Function', () => {
     expect(gameScheduleResult).not.toEqual('2022-03-15, 11:50:00');
   });
 
-  test('Should get redirect single time based on betting client url and eventId', () => {
+  test('Should get redirect one time based on betting client url and eventId', () => {
     goToBettingClient(1018502291);
     expect(window.open).toHaveBeenCalledTimes(1);
+  });
+
+  test('Should not called more than one time', () => {
+    goToBettingClient(1018502291);
+    expect(window.open).not.toHaveBeenCalledTimes(2);
   });
 
   test('Should get error message type is string', () => {
