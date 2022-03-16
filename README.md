@@ -11,7 +11,7 @@ Unibet live matches scorecard portal.
 
 ### Frontend
 
-- On frontend stack is **React JS, hooks** to show whole portal.
+- On frontend stack is **React JS, react hooks embla-carousel fetch-jsonp** to show whole portal.
 - Implementation of multiple small componets.
 - I also added **Loader and Error boundary componets** of loaders while loading table and Error boundary when server has any issue.
 - Carousel componet which has multipurpose functionality. **next scoreboard,previous scoreboard**.
