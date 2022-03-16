@@ -3,7 +3,9 @@ import {
   getGameTime,
   goToBettingClient,
   getErrorMessage,
+  clearCache,
 } from './utils';
+import { CACHE_EXPIRTY } from '../constant/constant';
 import { errorMessageUrl } from '../TestData/TestData';
 import * as _Window from 'jsdom/lib/jsdom/browser/Window';
 
@@ -11,6 +13,9 @@ describe('Utils Function', () => {
   window.open = jest.fn().mockImplementationOnce(() => {
     return new _Window({ parsingMode: 'html' });
   });
+
+  jest.useFakeTimers();
+  jest.spyOn(global, 'setTimeout');
 
   test('Should get correct image based on image type', () => {
     const actualResult = getImage('FOOTBALL');
@@ -25,8 +30,8 @@ describe('Utils Function', () => {
   });
 
   test('Should get correct sport time if match is today', () => {
-    const gameScheduleResult = getGameTime('2022-03-15T06:20Z');
-    expect(gameScheduleResult).toEqual('Today, 11:50:00');
+    const gameScheduleResult = getGameTime(new Date());
+    expect(gameScheduleResult).toMatch(/Today/i);
   });
 
   test('Should get correct sport time if match was yesterday', () => {
@@ -35,7 +40,7 @@ describe('Utils Function', () => {
   });
 
   test('Should not show  incorrect sport time if match is today', () => {
-    const gameScheduleResult = getGameTime('2022-03-15T06:20Z');
+    const gameScheduleResult = getGameTime(new Date());
     expect(gameScheduleResult).not.toEqual('2022-03-15, 11:50:00');
   });
 
@@ -59,5 +64,22 @@ describe('Utils Function', () => {
   test('Should remove url from error message if any', () => {
     const resultError = getErrorMessage(errorMessageUrl);
     expect(resultError).toEqual('JSONP server getting  failed');
+  });
+
+  test('Should wait for 2 minitues before clear cache', () => {
+    clearCache();
+    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeout).toHaveBeenLastCalledWith(
+      expect.any(Function),
+      CACHE_EXPIRTY
+    );
+  });
+
+  test('Should not wait less thane 2 minitues before clear cache', () => {
+    clearCache();
+    expect(setTimeout).not.toHaveBeenLastCalledWith(
+      expect.any(Function),
+      60000
+    );
   });
 });
