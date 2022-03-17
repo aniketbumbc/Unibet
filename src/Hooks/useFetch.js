@@ -32,6 +32,7 @@ export const useFetch = () => {
       } catch (error) {
         setLoading(false);
         setError(getErrorMessage(error));
+        console.error(error);
       }
     };
 

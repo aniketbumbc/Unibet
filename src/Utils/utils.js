@@ -5,6 +5,11 @@ const basketBallLogo = require('../assets/images/icons/basketball.png');
 const footBallLogo = require('../assets/images/icons/football.png');
 const defaultLogo = require('../assets/images/icons/default.png');
 
+/**
+ * Method return image based on image type
+ * @param {*} imageType
+ */
+
 export const getImage = (imageType) => {
   switch (imageType) {
     case 'TENNIS':
@@ -18,6 +23,12 @@ export const getImage = (imageType) => {
   }
 };
 
+/**
+ * Method based on date return game Time
+ * If it is today then return Today otherwise return date
+ * @param {*} sportDate
+ */
+
 export const getGameTime = (sportDate) => {
   let gameSchedule;
   const todayDate = new Date().toISOString().split('T')[0];
@@ -27,16 +38,30 @@ export const getGameTime = (sportDate) => {
   return `${gameSchedule}, ${gameTime}`;
 };
 
+/**
+ * Based on eventId redirection of url happned.
+ * @param { } eventId
+ */
+
 export const goToBettingClient = (eventId) => {
   const redirectUrl = `${UNIBET_CLIENT}${eventId}`;
   window.open(redirectUrl, '_blank');
 };
+
+/**
+ * return error message in string and removed senstitive information like URL,clientId
+ * @param {} error
+ */
 
 export const getErrorMessage = (error) => {
   if (error instanceof Error)
     return error.message.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '');
   return String(error);
 };
+
+/**
+ *  Method clear cache from indexDB
+ */
 
 export const clearCache = () => {
   setTimeout(() => {
