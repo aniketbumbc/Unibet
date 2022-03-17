@@ -11,11 +11,11 @@ Unibet live matches scorecard portal.
 
 ### Frontend
 
-- On frontend stack is **React JS, react hooks embla-carousel fetch-jsonp** to show whole portal.
+- On frontend stack is **React JS,react hooks,embla-carousel,fetch-jsonp** to show whole portal.
 - Implementation of multiple small componets.
 - I also added **Loader and Error boundary componets** of loaders while loading table and Error boundary when server has any issue.
 - Carousel componet which has multipurpose functionality. **next scoreboard,previous scoreboard**.
-- API Response is store in IndexDB browser.Expried in 2 mins as per the requirement.
+- API Response is store in IndexDB browser.Expried in 2 mins asper the requirement.
 - Unit test cases are cover most of functionality
 - Runs the client app in the development mode.
 - Open **http://localhost:3000** to view it in the browser.
